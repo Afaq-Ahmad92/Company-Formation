@@ -1,0 +1,72 @@
+.MainNavbar{
+    flex: 0.12;
+    width: 100%;
+    height: 12%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #525152   ;
+    background: linear-gradient(to right, #f2F2F2, #CDCDCD, #f2F2F2, #CDCDCD);
+}
+.Logo{
+    flex: 0.17;
+    width: 17%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Link{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #525152;
+}
+img {
+    width: 80%;
+    height: 80% !important;
+    object-fit: contain !important;
+}
+.PagesList{
+    flex: 0.70;
+    width: 70%;
+    height: 70%;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    background-color: #F2F5F9;
+    border-radius: 50px;
+}
+.PagesList ul {
+    width: 100%;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-evenly !important;
+    align-items: center;
+}
+ul Link{
+    list-style: none;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none !important;
+}
+.CalculatorButton{
+    flex: 0.13;
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.CalculatorButton button{
+    height: 65%;
+    width: 80%;
+    background-color: #3d35c5;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
