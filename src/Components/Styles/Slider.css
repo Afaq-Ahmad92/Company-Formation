@@ -1,0 +1,73 @@
+.MainSlider{
+  width: 100% !important;
+  position: absolute;
+  height: 80vh !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+/* Add your custom styles for the Carousel container and items */
+.custom-carousel {
+  height: 100% !important;
+  width: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
+  /* border: 1px solid green; */
+}
+
+/* Custom styles for each carousel item */
+.custom-carousel-item {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 80vh !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.custom-carousel-item img {
+  height: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+/* Custom styles for the image in each carousel item (60% width) */
+.custom-carousel-image {
+  width: 60%;
+  height: 100% !important;
+  object-fit: contain;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Custom styles for the caption/text in each carousel item (40% width) */
+.custom-carousel-caption {
+  width: 40%;
+  height: 100%;
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around !important;
+  align-items: center;
+  padding: 20px;
+  text-align: justify;
+  background-color: #F2F5F9;
+}
+.custom-carousel-caption h1, h5{
+  text-align: center;
+  margin:  0 auto;
+  width: 100%;
+  color: #0b0b0b;
+  font-style: italic;
+  text-transform: capitalize;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.custom-carousel-caption button{
+  height: 13%;
+  width: 45%;
+  background-color: #3d35c5;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 5%;
+}
+

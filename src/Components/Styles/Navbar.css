@@ -1,4 +1,6 @@
 .MainNavbar{
+    position: fixed;
+    top: 0;
     flex: 0.12;
     width: 100%;
     height: 12%;
@@ -23,6 +25,8 @@
     font-weight: 600;
     cursor: pointer;
     color: #525152;
+    display: flex;
+    align-content: center !important;
 }
 img {
     width: 80%;
@@ -38,6 +42,7 @@ img {
     align-items: center !important;
     background-color: #F2F5F9;
     border-radius: 50px;
+    padding-top: 1.3%;
 }
 .PagesList ul {
     width: 100%;
