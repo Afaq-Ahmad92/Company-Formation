@@ -1,55 +1,63 @@
 import React from 'react'
 import "../Styles/Testimonials.css" 
+import Testimonial1 from "../../Assets/Images/Testimonial1.png";
+import Testimonial2 from "../../Assets/Images/Testimonial2.png";
+import Testimonial3 from "../../Assets/Images/Testimonial3.png";
+import Testimonial4 from "../../Assets/Images/Testimonial4.png";
+import Accordians from "../Accordians"
 const Testimonials = () => {
     const TestimonialsCards=[
         {
-            Image:"../../Assets/Images/Logo.png",
-            Title:"Highly Experienced Advisors",
-            Details:"We are a team of 70+ professionals who can speak and interact in 16 different languages.",
-            Number:"01"
+            Image: Testimonial1,
+            Title: "Highly Experienced Advisors",
+            Details: "We are a team of 70+ professionals who can speak and interact in 16 different languages.",
+            Number: "01"
         },
         {
-            Image:"../Assets/Images/Testimonial2.png",
-            Title:"Reliable And Quick Services",
-            Details:"Visa approval, PRO services, business setups, trade services - we impart reliable service and assistance to clients.",
-            Number:"02"
+            Image: Testimonial2,
+            Title: "Highly Experienced Advisors",
+            Details: "We are a team of 70+ professionals who can speak and interact in 16 different languages.",
+            Number: "02"
         },
         {
-            Image:"../Assets/Images/Testimonial3.png",
-            Title:"Driven By Results",
-            Details:"We always strive to understand our clients’ business needs - and give them results that exceed their expectations.",
-            Number:"03"
+            Image: Testimonial3,
+            Title: "Highly Experienced Advisors",
+            Details: "We are a team of 70+ professionals who can speak and interact in 16 different languages.",
+            Number: "03"
         },
         {
-            Image:"../Assets/Images/Testimonial4.png",
-            Title:"Excellent Customer Service",
-            Details:"Our customer services are always ready to help our clients, maintaining mutual trust and good relationships.",
-            Number:"04"
+            Image: Testimonial4,
+            Title: "Highly Experienced Advisors",
+            Details: "We are a team of 70+ professionals who can speak and interact in 16 different languages.",
+            Number: "04"
         }
-    ]
-  return (
+    ];
+
+    return (
         <div className='TestimonialsMain'>
             {
-                TestimonialsCards.map((val,id)=>{
-                    return(
+                TestimonialsCards.map((val, id) => {
+                    return (
                         <div key={id} className='Card flexCol'>
-                                <div className='CardTop flexRow'>
-                                    <img src={val.Image} alt='Testimonial' />
-                                    <h1>{val.Number}</h1>
-                                </div>
-                                <div className='CardMid flexRow'>
-                                    <h1>{val.Title}</h1>
-                                </div>
-                                <div className='CardBottom flexRow'>
+                            <div className='CardTop '>
+                                <img className='Image'
+                                    src={val.Image}  
+                                    alt='Testimonial'
+                                />
+                                <h1 className='flexRow'>{val.Number}</h1>
+                            </div>
+                            <div className='CardMid'>
+                                <h1>{val.Title}</h1>
+                            </div>
+                            <div className='CardBottom'>
                                 <p>{val.Details}</p>
-                                </div>
-                               
+                            </div>
                         </div>
                     )
                 })
             }
         </div>
-  )
-}
+    );
+};
 
-export default Testimonials
+export default Testimonials;
